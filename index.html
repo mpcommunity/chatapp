@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پیام‌رسان حرفه‌ای</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet">
+</head>
+<body>
+    <div id="login-container" class="login-container">
+        <h2>ورود به چت</h2>
+        <input type="text" id="usernameInput" placeholder="اسمت رو وارد کن">
+        <button onclick="enterChat()">ورود</button>
+    </div>
+    <div id="chat-container" class="chat-container" style="display: none;">
+        <div class="header">
+            <h3>چت گروهی</h3>
+            <span id="currentUser"></span>
+        </div>
+        <div class="messages-container">
+            <div class="messages" id="messageList"></div>
+        </div>
+        <div class="input-container">
+            <div class="input-area">
+                <input type="text" id="messageInput" placeholder="پیامت رو بنویس...">
+                <button onclick="sendMessage()">ارسال</button>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
