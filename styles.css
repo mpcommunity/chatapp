@@ -98,8 +98,8 @@ body {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
-    background: #e5ddd5; /* رنگ ساده مثل واتس‌اپ، بدون عکس */
+    padding: 20px 20px 80px 20px; /* فاصله پایین برای جلوگیری از تداخل */
+    background: #e5ddd5;
     overflow: hidden;
 }
 
