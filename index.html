@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پیام‌رسان حرفه‌ای</title>
+    <title>پیام‌رسان مشتی</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet">
 </head>
@@ -17,14 +17,19 @@
         <div class="header">
             <h3>چت گروهی</h3>
             <span id="currentUser"></span>
+            <div class="header-actions">
+                <button class="icon-btn">📞</button>
+                <button class="icon-btn">📹</button>
+            </div>
         </div>
         <div class="messages-container">
             <div class="messages" id="messageList"></div>
         </div>
         <div class="input-container">
             <div class="input-area">
+                <button class="emoji-btn">😊</button>
                 <input type="text" id="messageInput" placeholder="پیامت رو بنویس...">
-                <button onclick="sendMessage()">ارسال</button>
+                <button onclick="sendMessage()" class="send-btn">➤</button>
             </div>
         </div>
     </div>
